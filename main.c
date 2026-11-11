@@ -37,7 +37,7 @@ int main(void) {
         
         printf("%-3d %-15s", team_id(t), team_name(t));
         
-        // Compensação de alinhamento para caracteres UTF-8[cite: 12]
+    
         for (int j = 0; j < utf8_continuation_bytes(team_name(t)); j++)
             putchar(' ');
             
